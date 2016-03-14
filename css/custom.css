@@ -6,7 +6,7 @@
 }
 
 div#about {
-  height: 750px;
+  min-height: 750px;
 }
 div#about h2 {
   line-height: 150px;
@@ -43,7 +43,7 @@ section.module.parallax {
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 48px;
-  margin-top: 100px;
+  margin-top: 1;
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -51,13 +51,22 @@ section.module.parallax p {
   color: rgba(255,255,255,0.8);
   text-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+.parallax-window {
+    padding-top: 0px;
+    min-height: 1000px;
+}
+
 section.module.parallax-1 {
  height: 400px;
   background-image: url("../img/blue.png");
 }
-section.module.parallax-2 {
-background-image: url("../img/Pine.jpg");
+
+section.module.parallax-2{
+    min-height: 600px;
+    background-image: 
 }
+
+
 section.module.parallax-3 {
   background-image: url("../img/ship.gif");
 }
