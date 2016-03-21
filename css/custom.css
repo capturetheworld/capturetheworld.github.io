@@ -53,9 +53,28 @@ section.module.parallax p {
 }
 .parallax-window {
     padding-top: 0px;
-    min-height: 1000px;
+    min-height: 600px;
 }
-
+.parallax-window h1{
+  padding-top: 20%;
+  font-size: 48px;
+}
+#circle-shape { 
+  font-family: Open Sans, sans-serif; 
+  margin: 2rem; 
+}
+#circle-shape p { 
+  line-height: 1.8; 
+}
+#circle-shape .curve { 
+  width: 1%; height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right:2rem; 
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
 section.module.parallax-1 {
  height: 400px;
   background-image: url("../img/blue.png");
@@ -63,7 +82,6 @@ section.module.parallax-1 {
 
 section.module.parallax-2{
     min-height: 600px;
-    background-image: 
 }
 
 
