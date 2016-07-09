@@ -11,9 +11,7 @@ div#about {
 div#about h2 {
   line-height: 150px;
 }
-div#resume h2 {
-  line-height: 150px;
-}
+
 section.module:last-child {
   margin-bottom: 0;
 }
@@ -106,4 +104,8 @@ section.module.parallax-3 {
   section.module.parallax h1 {
     font-size: 48px;
   }
+}
+div#resume h2 {
+  margin-bottom: 0;
+  line-height: 0;
 }
