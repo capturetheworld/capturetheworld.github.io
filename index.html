@@ -6,8 +6,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="Personal website of Ian S.">
+	<meta name="author" content="Ian S.">
 
 	<title>Ian SooHoo</title>
 
@@ -27,6 +27,12 @@
     <!-- favicon -->
     <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"/> -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/> 
+
+    <!-- JQUERY LIBRARY & MODERNIZR -->
+<div class="fit-vids-style" id="fit-vids-style" style="display: none;">­<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></div><script src="js/jquery-1.9.1.min.js"></script><style type="text/css">
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }</style>
+<!-- JQUERY LIBRARY & MODERNIZR -->
  
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -98,13 +104,15 @@
 			</div>
 		</div>
     </div>  
-    
-	<div class="parallax-window" data-parallax="scroll" data-image-src="img/Pine.jpg">
+	
+
+   <div class="parallax-window" data-parallax="scroll" data-image-src="img/Pine.jpg">
 		<div class="container">
             <h1 id="resume"><a href="documents/Resume.pdf" target="_blank"><u>RÉSUMÉ</u></a></h1><!--Image by Karen Roussel flickr.com/photos/9300748@N08/ -->
 			<p style="color: white; font-size: 20px;">This is a little paper I wrote about myself</p>
 		</div>
     </div>
+
     
 
 
@@ -204,17 +212,34 @@
 			</div>
 		</div>
 	</section>
-	<section id="contact" class="module parallax parallax-3">
-		<div class="container">
-			<h1 class="section-heading">Contact</h1>
-			<p>Email: <a href="mailto:ian@iansoohoo.me">ian@iansoohoo.me</a></p>
-		</div>
-	</section>
 
-	<!-- Portfolio Modals -->
-	<!-- Use the modals below to showcase details about your portfolio projects! -->
 
-	<!-- Portfolio Modal 1 -->
+
+<section2 id="contact">
+ <!-- PARALLAX VIDEO SECTION -->             
+  <div id="parallax-video" class="horizontalsection text-light videobg-section" >
+         		<div class="vid-overlay"></div>       
+	           	<div class="container">
+	            		<div class="section-title sr-animation animated">
+	                  	
+									<h1 class="section-heading">Contact</h1>
+									<p>Email: <a href="mailto:ian@iansoohoo.me">ian@iansoohoo.me</a></p>
+							 
+	                	</div>
+	                 
+	          		</div>   
+				<div class="vid-bg" id="abouttwo">
+					<video id="video0" preload="auto" autoplay="autoplay" loop="loop" muted="muted">
+						<source src="vid/merced.mp4" type="video/mp4">
+						<source src="vid/merced.webm" type="video/webm">bgvideo
+					</video>
+					</div>
+			</div> 
+
+</section2>
+
+
+          	<!-- MODULES -->
 	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-content">
 			<div class="close-modal" data-dismiss="modal">
@@ -350,11 +375,14 @@
 			</div>
 		</div>
 	</div>
+
+
 	 <footer>
+	 <section id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright"> &copy; 2016-2017 Ian SooHoo</span>
+                    <span class="copyright"> &copy; 2017 Ian SooHoo</span>
                      <a href="/credits">About Site</a>
                 </div>
                 <div class="col-md-4">
@@ -375,6 +403,7 @@
                 </div>
             </div>
         </div>
+        </section>
     </footer>
 
 	<!-- Portfolio Modal 6 -->
@@ -429,27 +458,31 @@
 				$('.modal').modal('hide');
 			}
 		});
-
-
-		/*PDFJS.getDocument('assets/misc/resume.pdf').then(function(pdf){
-			pdf.getPage(1).then(function(page) {
-				var scale = 1.5;
-				var viewport = page.getViewport(scale);
-
-				var canvas = document.getElementById('resume-pdf');
-				var context = canvas.getContext('2d');
-				canvas.height = viewport.height;
-				canvas.width = viewport.width;
-
-				var renderContext = {
-				  canvasContext: context,
-				  viewport: viewport
-				};
-				page.render(renderContext);
-			});
-		});*/
 	</script>
  <script src="js/main.js"></script>
+ <script src="js/backgroundVideo.js"></script>
+  <script>
+    const backgroundVideo = new BackgroundVideo('.bv-video', {
+      src: [
+        'vid/merced.mp4',
+        'vid/merced.webm'
+      ],
+      onReady: function () {
+        // Use onReady() to prevent flickers or force loading state
+        const vidParent = document.querySelector(`.${this.bvVideoWrapClass}`);
+        vidParent.classList.add('bv-video-wrap--ready');
+      }
+    });
+  </script>
+
+  <script type="text/javascript" src="js/jquery.visible.min.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+<!-- SCRIPTS -->
+
+
+
+
 </body>
 
 </html>
