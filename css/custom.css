@@ -84,14 +84,7 @@ section.module.parallax-1 {
 
   padding-bottom: 18%;
 }
-section.module.parallax-3 {
-  height: 400px;
-  min-height: 500px;
-}
-section.module.parallax-3  video {
-  position:fixed;
-}
-
+/*FONTS FOR VID PARALLAX*/
 .section-title.sr-animation.animated h1{
 
   color: rgba(255, 255, 255, 0.8);
@@ -105,30 +98,18 @@ section.module.parallax-3  video {
  color: rgba(255,255,255,0.8);
   text-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
-#video0{ 
-  left: 0px; 
-  position: absolute; 
-  z-index: -11; 
-  min-width: 80%; 
-  width: 100%;
-}
+/*Paralax*/
 #parallax-video{
   max-width: 100%;
-  height: 100%;
+  height: auto;
   top: 0px; 
-  position: relative; 
+  position: absolute; 
   overflow: hidden;
   z-index: 1;  
   padding-top: 18%; 
   padding-bottom: 18%;
 }
-#abouttwo{
-  position: absolute; 
-  width: 100%; 
-  top: 0px; 
-  left: 0px; 
-  z-index: -10;
-}
+
 
 #footer{
 padding-top: 2%;
