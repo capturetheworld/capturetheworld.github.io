@@ -116,3 +116,36 @@ padding-top: 2%;
 padding-bottom: 2%;
 
 }
+
+
+html {
+  overflow-y: scroll;
+}
+
+
+ 
+#filters {
+  margin:1%;
+  padding:0;
+  list-style:none;
+}
+
+  #filters li {
+    float:left;
+  }
+  
+  #filters li span {
+    display: block;
+    padding:5px 20px;   
+    text-decoration:none;
+    color:#666;
+    cursor: pointer;
+  }
+  
+  #filters li span.active {
+    background: #e95a44;
+    color:#fff;
+  }
+ 
+
+ 
