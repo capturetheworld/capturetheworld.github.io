@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+	<!DOCTYPE html>
+	<html lang="en">
 	<head>
 		<!-- Title and Meta -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,82 +13,64 @@
 		<!-- JS -->
 		<script src="js/classie.js"></script>
 		<script>
-		    function init() {
-		        window.addEventListener('scroll', function(e){
-		            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-		                shrinkOn = 10,
-		                header = document.querySelector("header");
-		            if (distanceY > shrinkOn) {
-		                classie.add(header,"smaller");
-		            } else {
-		                if (classie.has(header,"smaller")) {
-		                    classie.remove(header,"smaller");
-		                }
-		            }
-		        });
-		    }
-		    window.onload = init();
+			function init() {
+				window.addEventListener('scroll', function(e){
+					var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+					shrinkOn = 10,
+					header = document.querySelector("header");
+					if (distanceY > shrinkOn) {
+						classie.add(header,"smaller");
+					} else {
+						if (classie.has(header,"smaller")) {
+							classie.remove(header,"smaller");
+						}
+					}
+				});
+			}
+			window.onload = init();
 		</script>
 	</head>
 	<body>
 		<header>
-			 <div class="container clearfix">
-			        <h1 id="logo">
-			            Ian SooHoo
-			        </h1>
-			        <nav>
-			            <a href="#about">About</a>
-			            <a href="#resume">Résumé</a>
-			            <a href="#showcase">Showcase</a>
-			            <a href="#projects">Projects</a>
-			            <a href="#contact">Contact</a>
-			        </nav>
-			    </div>
+			<div class="container clearfix">
+				<h1 id="logo">
+					Ian SooHoo
+				</h1>
+				<nav>
+					<a href="#about">About</a>
+					<a href="#resume">Résumé</a>
+					<a href="#showcase">Showcase</a>
+					<a href="#projects">Projects</a>
+					<a href="#contact">Contact</a>
+				</nav>
+			</div>
 		</header>
-		<div id="main">
-    <div id="content">
-        <section>
-            <div class="container">
-                <h1>Header Resize On Scroll with Animations</h1>
-                <p>Cupcake ipsum dolor sit amet lollipop. Macaroon candy cotton candy bear claw macaroon carrot cake pastry icing dessert. Cupcake pastry tart sesame snaps lollipop donut pie. Cookie apple pie toffee lemon drops jelly beans cheesecake sweet roll. Jelly-o soufflé donut candy canes wafer dragée sweet cheesecake. Macaroon caramels pie cookie gummi bears. Ice cream jelly-o toffee cookie gingerbread cookie. Soufflé fruitcake jelly-o jelly chupa chups jelly beans. Dragée marzipan pastry macaroon oat cake muffin soufflé topping liquorice. Jelly-o chocolate cake lollipop.</p>
-                <p>Sugar plum muffin cookie pastry oat cake icing candy canes chocolate. Gummi bears chupa chups fruitcake dessert jelly. Muffin cookie ice cream soufflé pastry lollipop gingerbread sweet. Unerdwear.com bonbon candy marzipan bonbon gummies chocolate cake gummi bears powder. Unerdwear.com tart halvah chocolate cake dragée liquorice. Sugar plum chocolate bar pastry liquorice dragée jelly powder. Jelly tootsie roll applicake caramels. Marzipan candy tootsie roll donut. Gummies ice cream macaroon applicake.</p>
-                <p>
-                    <a href="http://www.callmenick.com/tutorials/create-an-animated-resizing-header-on-scroll">&laquo; Go back to this tutorial?</a><br>
-                    <a href="http://www.callmenick.com/tutorials">&laquo; Go back to all tutorials?</a>
-                </p>
-            </div>
-        </section>
-        <section class="color">
-            <div class="container">
-                <h1>Cupcakes for the people!</h1>
-                <p>Cupcake ipsum dolor sit amet lollipop. Macaroon candy cotton candy bear claw macaroon carrot cake pastry icing dessert. Cupcake pastry tart sesame snaps lollipop donut pie. Cookie apple pie toffee lemon drops jelly beans cheesecake sweet roll. Jelly-o soufflé donut candy canes wafer dragée sweet cheesecake. Macaroon caramels pie cookie gummi bears. Ice cream jelly-o toffee cookie gingerbread cookie. Soufflé fruitcake jelly-o jelly chupa chups jelly beans. Dragée marzipan pastry macaroon oat cake muffin soufflé topping liquorice. Jelly-o chocolate cake lollipop.</p>
-                <p>Sugar plum muffin cookie pastry oat cake icing candy canes chocolate. Gummi bears chupa chups fruitcake dessert jelly. Muffin cookie ice cream soufflé pastry lollipop gingerbread sweet. Unerdwear.com bonbon candy marzipan bonbon gummies chocolate cake gummi bears powder. Unerdwear.com tart halvah chocolate cake dragée liquorice. Sugar plum chocolate bar pastry liquorice dragée jelly powder. Jelly tootsie roll applicake caramels. Marzipan candy tootsie roll donut. Gummies ice cream macaroon applicake.</p>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h1>Chocolate, vanilla, and red velvet</h1>
-                <p>Cupcake ipsum dolor sit amet lollipop. Macaroon candy cotton candy bear claw macaroon carrot cake pastry icing dessert. Cupcake pastry tart sesame snaps lollipop donut pie. Cookie apple pie toffee lemon drops jelly beans cheesecake sweet roll. Jelly-o soufflé donut candy canes wafer dragée sweet cheesecake. Macaroon caramels pie cookie gummi bears. Ice cream jelly-o toffee cookie gingerbread cookie. Soufflé fruitcake jelly-o jelly chupa chups jelly beans. Dragée marzipan pastry macaroon oat cake muffin soufflé topping liquorice. Jelly-o chocolate cake lollipop.</p>
-                <p>Sugar plum muffin cookie pastry oat cake icing candy canes chocolate. Gummi bears chupa chups fruitcake dessert jelly. Muffin cookie ice cream soufflé pastry lollipop gingerbread sweet. Unerdwear.com bonbon candy marzipan bonbon gummies chocolate cake gummi bears powder. Unerdwear.com tart halvah chocolate cake dragée liquorice. Sugar plum chocolate bar pastry liquorice dragée jelly powder. Jelly tootsie roll applicake caramels. Marzipan candy tootsie roll donut. Gummies ice cream macaroon applicake.</p>
-            </div>
-        </section>
-        <section class="color">
-            <div class="container">
-                <h1>Come to me!</h1>
-                <p>Cupcake ipsum dolor sit amet lollipop. Macaroon candy cotton candy bear claw macaroon carrot cake pastry icing dessert. Cupcake pastry tart sesame snaps lollipop donut pie. Cookie apple pie toffee lemon drops jelly beans cheesecake sweet roll. Jelly-o soufflé donut candy canes wafer dragée sweet cheesecake. Macaroon caramels pie cookie gummi bears. Ice cream jelly-o toffee cookie gingerbread cookie. Soufflé fruitcake jelly-o jelly chupa chups jelly beans. Dragée marzipan pastry macaroon oat cake muffin soufflé topping liquorice. Jelly-o chocolate cake lollipop.</p>
-                <p>Sugar plum muffin cookie pastry oat cake icing candy canes chocolate. Gummi bears chupa chups fruitcake dessert jelly. Muffin cookie ice cream soufflé pastry lollipop gingerbread sweet. Unerdwear.com bonbon candy marzipan bonbon gummies chocolate cake gummi bears powder. Unerdwear.com tart halvah chocolate cake dragée liquorice. Sugar plum chocolate bar pastry liquorice dragée jelly powder. Jelly tootsie roll applicake caramels. Marzipan candy tootsie roll donut. Gummies ice cream macaroon applicake.</p>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h1>Sugar rush, oh my...</h1>
-                <p>Cupcake ipsum dolor sit amet lollipop. Macaroon candy cotton candy bear claw macaroon carrot cake pastry icing dessert. Cupcake pastry tart sesame snaps lollipop donut pie. Cookie apple pie toffee lemon drops jelly beans cheesecake sweet roll. Jelly-o soufflé donut candy canes wafer dragée sweet cheesecake. Macaroon caramels pie cookie gummi bears. Ice cream jelly-o toffee cookie gingerbread cookie. Soufflé fruitcake jelly-o jelly chupa chups jelly beans. Dragée marzipan pastry macaroon oat cake muffin soufflé topping liquorice. Jelly-o chocolate cake lollipop.</p>
-                <p>Sugar plum muffin cookie pastry oat cake icing candy canes chocolate. Gummi bears chupa chups fruitcake dessert jelly. Muffin cookie ice cream soufflé pastry lollipop gingerbread sweet. Unerdwear.com bonbon candy marzipan bonbon gummies chocolate cake gummi bears powder. Unerdwear.com tart halvah chocolate cake dragée liquorice. Sugar plum chocolate bar pastry liquorice dragée jelly powder. Jelly tootsie roll applicake caramels. Marzipan candy tootsie roll donut. Gummies ice cream macaroon applicake.</p>
-            </div>
-        </section>
-    </div>
-</div><!-- #main -->
+
+	<section class="intro">
+			<div class= "inner">
+				<div class="content">
+					<h1>Hello, I'm Ian!</h1>
+					<a class="btn" href="#">Get Started</a>
+				</div>
+			</div>
+		</section>
+
+
+<p> I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.I am greateful for you.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra velit ut nunc blandit, at ullamcorper augue viverra. Proin condimentum nisl sed nunc commodo, non vulputate tortor semper. Proin consequat magna et velit tempus ultricies. Nunc dapibus tempus ante feugiat accumsan. Cras ornare leo sed tristique cursus. Sed dictum mi at nibh vulputate placerat. Vestibulum vehicula felis sit amet ipsum ultricies porttitor. Nulla euismod diam sit amet augue ultrices porttitor.
+
+Nunc posuere congue eros id posuere. Ut enim nisl, condimentum sit amet nisl eget, vulputate eleifend magna. Pellentesque id neque justo. Sed et vehicula metus. Morbi sed lectus nibh. Fusce odio tellus, sagittis nec erat et, ullamcorper volutpat dolor. Pellentesque dignissim varius eros, vitae iaculis tellus congue sed. Donec non semper elit. Praesent aliquam at justo nec finibus. In varius mauris sit amet consequat condimentum. Cras eget sapien turpis. Pellentesque commodo tempus libero nec tempus.
+
+Sed aliquet vehicula mauris quis lacinia. Nunc lacus sapien, sollicitudin nec laoreet non, aliquet nec arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ullamcorper metus arcu, id bibendum nisi vulputate vitae. Sed ut erat non felis laoreet consequat. Pellentesque semper sem non sapien molestie tempus. Nunc mauris diam, fermentum ac gravida vel, feugiat ac quam. In rutrum posuere tortor eu tempor. Quisque et lacus sit amet lorem tristique porta a a orci. Praesent vel dolor leo. Nunc dignissim velit eu rutrum sodales. Integer ut pharetra nisi. Nulla lectus leo, vestibulum vitae viverra eget, cursus vitae nunc. Nunc elit purus, pellentesque sit amet scelerisque at, commodo nec purus. Aliquam luctus ipsum orci, sit amet volutpat ante convallis vitae. In dapibus fermentum neque.
+
+Aenean eget ante sed orci dapibus vehicula vitae vel nulla. Integer vel mauris neque. Maecenas sit amet porta nunc, vel hendrerit odio. Vivamus vitae vulputate odio. In condimentum mi nec sollicitudin consectetur. Fusce pulvinar vel felis a ullamcorper. Vivamus magna turpis, bibendum eget nibh id, ultricies sollicitudin nunc.
+
+Aenean euismod convallis ligula et malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur ante lacus, rutrum a lectus id, consequat blandit purus. Maecenas sollicitudin massa vitae varius bibendum. Fusce id mauris erat. Vestibulum tincidunt tempor justo, eu suscipit nibh vehicula eget. Integer gravida eros nisl, ut dignissim velit venenatis volutpat. Vivamus cursus nisi eu tortor rutrum porttitor. Praesent tempor orci volutpat sem venenatis, ut tristique lacus placerat. In at lectus efficitur, sagittis tellus a, molestie mauris. Sed nulla turpis, consequat quis ante eu, cursus pulvinar neque.</p>
+
+
+
+
 	</body>
 
 
-</html>
+	</html>
