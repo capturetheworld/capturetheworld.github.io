@@ -1,0 +1,8 @@
+move animate.127 bkup_dir
+copy animate.css animate.127
+move animate.127 bkup_dir
+
+
+move style.127 bkup_dir
+copy style.css style.127
+move style.127 bkup_dir

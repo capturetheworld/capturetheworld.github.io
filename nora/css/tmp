@@ -1,0 +1,9 @@
+@-webkit-keyframes mySlide{
+	from{left: 50%; }
+	to {left:2%}
+}
+@keyframes mySlide{
+	from{left: 50%; }
+	to {left:2%}
+}
+

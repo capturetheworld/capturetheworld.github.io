@@ -1,0 +1,118 @@
+.back-to-top {
+  color: #45A5E5 !important;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+div#about {
+  min-height: 750px;
+}
+div#about h2 {
+  line-height: 150px;
+}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 650px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+ section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  margin-top: 1;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax p {
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+
+
+#circle-shape { 
+  font-family: Open Sans, sans-serif; 
+  margin: 2rem; 
+}
+#circle-shape p { 
+  line-height: 1.8; 
+}
+#circle-shape .curve { 
+  width: 1%; height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right:2rem; 
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+section.module.parallax-1 {
+ height: 400px;
+  background-image: url("../img/blue.png");
+}
+
+
+.parallax-window h1{
+  padding-top: 18%;
+  font-size: 50px;
+}
+
+.parallax-window{
+
+  padding-bottom: 18%;
+}
+/*FONTS FOR VID PARALLAX*/
+.section-title.sr-animation.animated h1{
+
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  margin-top: 1;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.section-title.sr-animation.animated p{
+
+ color: rgba(255,255,255,0.8);
+  text-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+/*Paralax*/
+#parallax-video{
+  max-width: 100%;
+  height: auto;
+  top: 0px; 
+  position: absolute; 
+  overflow: hidden;
+  z-index: 1;  
+  padding-top: 18%; 
+  padding-bottom: 18%;
+}
+
+
+#footer{
+padding-top: 2%;
+padding-bottom: 2%;
+
+}

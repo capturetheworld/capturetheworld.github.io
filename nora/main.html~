@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Title and Meta -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+		<title>Ian SooHoo</title>
+		<!-- CS -->
+		
+			<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/layout.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!-- JS -->
+		<script src="js/classie.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	</head>
+	<body>
+		<header>
+				<div class="line"
+					id="bounce">
+					Why Not	
+				</div>
+				<svg>
+					<path class="draw_line" d="M200 50  l800 0"  pathLength="500"/ >
+				</svg>
+
+		</header>
+
+    <footer id= "footer" class="grid">
+    	<div class="box">
+      <p>Copyright 2018</p>
+   </div>
+    </footer>
+	</body>
+</html>

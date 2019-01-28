@@ -1,0 +1,19 @@
+.slide-out {
+  position: absolute;
+
+  -webkit-animation: slide 2s forwards;
+  -webkit-animation-delay:  0.5s;
+  -animation: slide 2s forwards;
+  -animation-delay:  0.5s;
+  color: white;
+  overflow: hidden;
+  left: 5px;
+}
+
+@-webkit-keyframes slide{
+	100%{left: 500px; }
+}
+@keyframes slide{
+	100%{left: 500px; }
+}
+

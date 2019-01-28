@@ -1,0 +1,3 @@
+move index.127 bkup_dir
+copy index.html index.127
+move index.127 bkup_dir

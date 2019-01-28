@@ -1,0 +1,39 @@
+.bounce {
+  position: absolute;
+
+  -webkit-animation: slide 2s forwards;
+  -webkit-animation-delay:  0.5s;
+  -animation: slide 2s forwards;
+  -animation-delay:  0.5s;
+  color: white;
+  overflow: hidden;
+  left: 5px;
+}
+
+
+
+.draw_line{
+	stroke: yellow;
+	stroke-dasharray: 320;
+	stroke-dashoffset: 0;
+	fill: none;
+	stroke-width:6px;
+	animation: dash 5s linear ;
+	display:inline;	
+}
+
+@keyframes dash{
+	from{
+		stroke-dashoffset: 320;
+	}
+	to{
+		stroke-dashoffset:0;
+
+	}
+}
+@-webkit-keyframes slide{
+	100%{left: 500px; }
+}
+@keyframes slide{
+	100%{left: 500px; }
+}
