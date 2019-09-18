@@ -1,0 +1,49 @@
+.line {
+
+  color: white;
+  position: relative;
+  overflow: hidden;
+  width:80px;
+  height: 80px;
+  left: 100px;
+
+
+  }
+#bounce {
+  position: absolute;
+  width: 80px;
+  height:80px;
+
+  -webkit-animation: slide 2s forwards;
+  -webkit-animation-delay:  0.5s;
+  -animation: slide 2s forwards;
+  -animation-delay:  0.5s;
+}
+
+
+
+.path{
+	stroke: yellow;
+	stroke-dasharray: 320;
+	stroke-dashoffset: 0;
+	fill: none;
+	stroke-width:16px;
+	animation: dash 5s linear ;
+	
+}
+
+@keyframes dash{
+	from{
+		stroke-dashoffset: 320;
+	}
+	to{
+		stroke-dashoffset:0;
+
+	}
+}
+@-webkit-keyframes slide{
+	100%{left: 500px; }
+}
+@keyframes slide{
+	100%{left: 500px; }
+}

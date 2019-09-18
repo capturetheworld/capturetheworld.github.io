@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald') ;
+@import url('https://fonts.googleapis.com/css?family=Karla') ; 
+:root {
+  --top-color: #69F0AE;
+  --bottom-color: #132132;
+  --dark-text: #333333;
+  --light-background:#A6CFE8;
+  --light-text: #A6CFE8;
+  --dark-background:#132132;
+  
+
+}
+
+ html,body {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     width: 100%;
+     line-height: 1;
+}
+ h1, h2, h3, h4, h5, h6 {
+     clear: both;
+     font-weight: normal;
+}
+/*Main Image*/
+.homePage{
+
+     background: url(../media/balloons.jpg) ;
+     height: 100% !important;
+     width: 100%;
+     background-size: cover;
+}
+ #intro {
+     height: 100% !important;
+     width: 100%;
+     margin: auto;
+     ackground: url(../media/balloons.jpg) ;
+     display: table;
+     top: 0;
+     background-size: cover;
+     clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 3vw)
+  );
+}
+
+ #intro .inner{
+     display: table-cell;
+     width: 100%;
+     max-width: none;
+     border: solid red;
+     padding-top: 30%;
+     z-index: -1;
+     position: absolute;
+     margin-top:0px;
+
+}
+ 
+ .content{
+	 margin-top: 3%;
+     max-width: 48%;
+     margin-left: 25% ;
+     border: solid white;
+     height: 40%;
+
+}
+ .content .fade-in-out h1{
+     font-family:'Oswald', sans-serif;
+     color: #F9F3F4;
+     /*text-shadow: 0px 0px 300px;*/
+     font-size: 200%;
+	display: inline-block;
+	margin-left: 30%;
+	margin-right: 5%;
+     margin-bottom: 0;
+}
+ .content .fade-in-out h2{
+     font-family:'Oswald', sans-serif;
+     color: #F9F3F4;
+     margin-top: 0;
+     /*text-shadow: 0px 0px 300px;*/
+     font-size: 100%;
+     order: solid white;
+	display: inline-block;
+	margin-left: 30%;
+	margin-right: 5%;
+}
+
+.intro:after {
+ 
+}
+
+#underheader{
+     margin-top: -5vw;
+     background-color: var(--bottom-color);
+     height: 20%;
+     z-index: -1;
+}
+
+#traits{
+    padding-top: 2%;
+}
+
+
+
+/* =Global -------------------------------------------------------------- */
+ body {
+     background-color: white;
+     color: var(--dark-text);
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 300;
+     font-size: 1.1em;
+     line-height: 1.8;
+     text-align: left;
+}
+/* Headings */
+ h1, h2, h3, h4, h5, h6 {
+     line-height: 1;
+     font-weight: 300;
+}
+ a {
+     text-decoration: none;
+     color: #3cb5f9;
+}
+ a:hover {
+     color: #0793e2;
+}
+
+
+ /* =Header -------------------------------------------------------------- */
+    /*Header - Desktop Large*/
+ @media (min-width: 880px){
+   
+     header {
+	     /***
+         width: 100%;
+         height: 100px;
+         overflow: hidden;
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 999;
+         background-color: rgba(255, 0, 0, 0);
+
+	 ****/
+	 /*
+         -webkit-transition: height 0.3s;
+         -moz-transition: height 0.3s;
+         -ms-transition: height 0.3s;
+         -o-transition: height 0.3s;
+         transition: height 0.3s;
+	 */
+header: z-index:1;
+    }
+    /*Header Logo - Desktop Large*/
+     .homePage h1#logo{
+         display: inline-block;
+        margin-top: 0;
+         float: left;
+         font-family:'Space Mono', sans-serif;
+         color: white;
+         font-weight: 300;
+         font-size: 22px;
+	 position: absolute;
+         -webkit-transition: all 0.3s;
+         -moz-transition: all 0.3s;
+         -ms-transition: all 0.3s;
+         -o-transition: all 0.3s;
+         transition: all 0.3s;
+         margin-left: 5%;
+          line-height: 80px;
+	  max-width: 20%;
+
+         vertical-align: text-bottom;
+	 border: solid green 2px;
+
+    }
+
+    .topnav {
+         display: inline-block;
+         float: right;
+	 border: olid red;
+	 overflow:hidden;
+	 margin-right:2%;
+	 max-width: 50%;
+    }
+     .topnav .closeBtn{
+	    display: none;
+    }
+    .topnav span a {
+	  border: pink olid  4px; //nora
+
+        display: inline-block;
+         margin-left: 10px;
+	  float: right //nora
+         font-family:'Karla', sans-serif;
+         color: white;
+         font-weight: 300;
+         font-size: 18px;
+         -webkit-transition: all 0.3s;
+         -moz-transition: all 0.3s;
+         -ms-transition: all 0.3s;
+         -o-transition: all 0.3s;
+         transition: all 0.3s;
+         vertical-align: text-bottom;
+          line-height: 80px;
+    }
+     .topnav a:hover {
+         color: var(--top-color);
+    }
+
+    .topnav .icon {
+	    display: none;
+	    border: olid blue;
+	    color: blue;
+    }
+
+    .topnavOverlay {
+	    display: none;
+    }
+
+     header .smaller {
+         height: 55px;
+         background-color: var(--bottom-color);
+         transition: background-color 0.2s linear;
+         margin-right: 2%;
+	    border: solid 2px  purple;
+
+    }
+     header .smaller h1#logo {
+	    border: solid 2px  purple;
+         width: 150px;
+	 min-width: 50px; //nora
+         font-size: 22px;
+         margin-left: 2%;
+         vertical-align: bottom;
+         line-height: 55px;
+    }
+     header.smaller nav a {
+        vertical-align: bottom;
+         line-height: 55px;
+    }
+
+ .content h1{
+     font-family:'Oswald', sans-serif;
+     color: #F9F3F4;
+     /*text-shadow: 0px 0px 300px;*/
+     font-size: 200%;
+     margin-left: 1%;
+	position: relative;
+	float: left;
+}
+
+
+}
+
+
+/*Grid style*/
+
+.content-title{
+    /*color: var(--light-text);*/
+    text-align: center;
+    padding: 1em 0;
+}
+
+/*A - About Me*/
+#section-a{
+    background: var(--light-background);
+    padding: 2em;
+
+}
+.atitle{
+    color: var(--dark-text);
+
+}
+
+
+
+
+/* B - Resume*/
+#section-b{
+    background: var(--dark-background);
+    
+}
+.btitle{
+    color: var(--light-text);
+
+}
+#section-b  .box {
+    padding: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/*C - Projects*/
+#section-c{
+    background: var(--light-background);
+    
+}
+.ctitle{
+    color: var(--dark-text);
+
+}
+#section-c  .box {
+    padding: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+/*D - Contact Me*/
+#section-d{
+   
+   background: var(--dark-background);
+
+}
+.dtitle{
+    color: var(--light-text);
+
+}
+#section-d  .box {
+    padding: 2em;
+    color: #fff;
+}
+
+
+
+/*Footer*/
+
+#footer  {
+    
+ max-height: 2%;
+padding-left: 2em;
+font-family:'Space Mono', sans-serif;
+}
+
+
+/*Desktop*/
+
+
+	@media  screen and (max-width: 880px){  //nora
+		body{
+		}
+		.homePage header  h1#logo {
+		
+
+         display: inline-block;
+        margin-top: 0;
+         float: left;
+         font-family:'Space Mono', sans-serif;
+         color: white;
+         font-weight: 300;
+         font-size: 22px;
+	 position: absolute;
+         -webkit-transition: all 0.3s;
+         -moz-transition: all 0.3s;
+         -ms-transition: all 0.3s;
+         -o-transition: all 0.3s;
+         transition: all 0.3s;
+         margin-left: 0.5%;
+          line-height: 80px;
+	  width: 30%; 
+
+         vertical-align: text-bottom;
+	border: olid green 2px;
+
+		}
+
+		.topnav a {isplay : none; 
+			width:0;}
+
+		.topnav a.icon {
+			float: right;
+			display: block;
+			margin-right:4%;
+		}
+		.topnav a {display : none;}
+
+	}
+	@media  screen and (max-width: 880px){  //nora
+
+    		.topnavOverlay a.icon { 
+			position: absolute;
+			right: 0;
+			top: 0;
+    			display: none;
+		}
+
+
+    .topnavOverlay {
+	    height: 80%;
+	    position: fixed;
+	    z-index: 1;
+	    top: 0;
+	    right: 0;
+	    background-color: rgb(0,0,0.9);
+	    overflow-x: hidden;
+	    width: 0;
+	    transition: all 1.5s ;
+
+
+    }
+    .topnavOverlay span {
+
+	    position: relative;
+	    top: 25%;
+	    text-align: center;
+	    margin-top: 30px;
+	    background-color: red;
+	    width: 100%;
+	    transition: width 1.5s ;
+
+    }
+
+    .topnavOverlay a {
+
+	padding: 8px;
+	text-decoration: none;
+	font-size: #818181;
+	display: block;
+	transition: width 1.3s linear;
+	color: white;
+	width: auto;
+
+    }
+
+     .topnavOverlay a:hover, .topnavOverlay a:focus{
+	     color: #f1f1f1;
+     }
+
+     .topnavOverlay .closeBtnActive{
+	     position: absolute;
+	     top:20px;
+	     right: 45px;
+	     font-size: 60px;
+     }
+	    /****
+    .topnavOverlay {
+	    position: relative;
+         display: block;
+         float: right;
+	 border: olid red;
+	 overflow:hidden;
+	 margin-right:1px;
+	 max-height: 70%
+	 max-width: 20%;
+
+	 z-index =1;
+    }
+		.topnavOverlay a{
+	 z-index =1;
+			float: right;
+			display: block;
+		border: olid blue;
+			text-align: left;
+			width: 80%;
+		padding:5%;
+			padding-left:1%;;
+	 ackground-color: red;
+
+
+
+  position: relative;
+  -webkit-animation: mySlide 2s forwards;
+  -webkit-animation-delay:  0.5s;
+  -animation: slide 2s forwards;
+  -animation-delay:  0;
+  color: white;
+  overflow: hidden;
+  left: 5px;
+  opacity:0;
+}
+		}
+
+
+		***/
+@-webkit-keyframes mySlide{
+	from{left: 50%; opacity:0; }
+	to {left:2%; opacity:1;}
+}
+@keyframes mySlide{
+	from{left: 50%; opacity:0;}
+	to {left:2%; opacity:1;}
+}
+
+
+.slide-out {
+  position: absolute;
+  -webkit-animation: slide 2s forwards;
+  -webkit-animation-delay:  0.5s;
+  -animation: slide 2s forwards;
+  -animation-delay:  0.5s;
+  color: white;
+  overflow: hidden;
+  left: 5px;
+}
+
+@-webkit-keyframes slide{
+	100%{left: 50px; }
+}
+@keyframes slide{
+	100%{left: 50px; }
+}
+
+
+	} // accomodate for window shrink on desktop
+
+
+
+
+	} // accomodate for window shrink on desktop
+
+
+    .gird{
+        display: grid;
+    }
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .content-wrap,#section-b ul{
+        grid-column: 2/3;
+    }
+
+
+}
+
+
+
+/* =PROJECTS -------------------------------------------------------------- */
+

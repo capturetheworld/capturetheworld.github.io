@@ -1,0 +1,90 @@
+
+.draw_line{
+	stroke: yellow;
+	stroke-dasharray: 520;
+	stroke-dashoffset: 0;
+	fill: none;
+	stroke-width:2px;
+	opacity:0;
+	animation: dash 2s forwards ;
+	animation-delay:1s;
+	display:inline;	
+	margin-bottom:0;
+	padding-bottom: 0;
+}
+
+@keyframes dash{
+	from{
+		stroke-dashoffset: 520;
+		opacity:0;
+	}
+	to{
+		stroke-dashoffset:0;
+		opacity:1;
+
+	}
+}
+@-webkit-keyframes dash{
+	from{
+		stroke-dashoffset: 520;
+		opacity:0;
+	}
+	to{
+		stroke-dashoffset:0;
+		opacity:1;
+
+	}
+}
+
+
+
+.fade-in-out
+{
+	-webkit-animation-name: fadeout;
+	-webkit-animation-duration: 10s;
+	animation-name: fadeout;
+	animation-duration: 4s;
+
+}
+
+
+@-webkit-keyframes fadeout{
+	0% {opacity: 0;}
+	100%{opacity: 1;}
+	}
+@keyframes fadeout{
+	0% {opacity: 0;}
+	100%{opacity: 1;}
+	}
+
+
+
+.slide-out {
+  position: absolute;
+
+  -webkit-animation: slide 2s forwards;
+  -webkit-animation-delay:  0.5s;
+  -animation: slide 2s forwards;
+  -animation-delay:  10050s;
+  color: white;
+  overflow: hidden;
+  left: 5px;
+}
+
+@-webkit-keyframes slide{
+	100%{left: 500px; }
+}
+@keyframes slide{
+	100%{left: 500px; }
+}
+
+
+#msg {
+
+	color: white;
+}
+
+
+
+
+

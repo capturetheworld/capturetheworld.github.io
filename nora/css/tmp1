@@ -1,0 +1,21 @@
+
+.fade-in-out
+{
+	-webkit-animation-name: fadeout;
+	-webkit-animation-duration: 10s;
+	animation-name: fadeout;
+	animation-duration: 4s;
+
+}
+
+
+@-webkit-keyframes fadeout{
+	0% {opacity: 0;}
+	100%{opacity: 1;}
+	}
+@keyframes fadeout{
+	0% {opacity: 0;}
+	100%{opacity: 1;}
+	}
+
+

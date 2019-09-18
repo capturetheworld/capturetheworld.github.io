@@ -1,0 +1,4 @@
+				console.log("closeNav");
+				var x = document.getElementById("topnavOverlayID");
+
+				x.style.width ="0";
