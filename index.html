@@ -1,585 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+	Author by FreeHTML5.co
+	Twitter: https://twitter.com/fh5co
+	Facebook: https://fb.com/fh5co
+	URL: https://freehtml5.co
+-->
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Personal website of Ian S.">
-		<meta name="author" content="Ian S.">
-		<title>Ian SooHoo</title>
-		<!-- Bootstrap Core CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom CSS -->
-		<link href="css/agency.css" rel="stylesheet">
-		<link href="css/custom.css" rel="stylesheet">
-		<!-- Custom Fonts -->
-		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-		<!-- favicon -->
-		<!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"/> -->
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
-		<!-- JQUERY LIBRARY & MODERNIZR -->
-		<div class="fit-vids-style" id="fit-vids-style" style="display: none;">
-			­
-			<style>.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
-		</div>
-		<script src="js/jquery-1.9.1.min.js"></script>
-		<style type="text/css">
-			:root #header + #content > #left > #rlblock_left
-			{ display: none !important; }
-		</style>
-		<!-- JQUERY LIBRARY & MODERNIZR -->
-	</head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="parallax/parallax.js"></script>
-	<body id="page-top" class="index">
-		<a href="#page-top" class="back-to-top"><i class="fa fa-stack"><i class="fa fa-arrow-up fa-stack-1x"></i><i class="fa fa-square-o fa-stack-2x"></i></i></a>
-		<!-- Navigation -->
-		<nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand page-scroll" href="#page-top">Ian SooHoo</a>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="hidden">
-							<a href="#page-top"></a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#about">Info</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#resume">Résumé</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#projects">Projects</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#contact">Contact</a>
-						</li>
-						<li>
-							<a class="page-scroll" data-toggle="dropdown" href="">Video Production</a>
-							<ul class="dropdown-menu">
-								<li><a href="/vidprod">Assignments</a></li>
-								<li><a href="https://www.youtube.com/playlist?list=PLbtJH6WGPeNuGHyYZcv3lWjpMzSbUYzJU" target="_blank">Vlogs</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<title>Author</title>
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="site-navigation">
+		<div class="site-navigation-inner site-container">
+			<img src="./img/logo.png" alt="site logo">
+			<div class="main-navigation">
+				<ul class="main-navigation__ul">
+					<li><a href="#">Homepage</a></li>
+					<li><a href="#">Page 1</a></li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+					<li><a href="#">Page 4</a></li>
+				</ul>
 			</div>
-		</nav>
-		<section class="module parallax parallax-1">
-			<div class="container">
-				<h1>Ian SooHoo | Student</h1>
-				<p>Welcome to my site.</p>
+			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
 			</div>
-		</section>
-		<div id="about" class="bg-light-gray">
-			<div class="container">
-				<h2>About ME</h2>
-				<div id="circle-shape">
-					<img src="img/me.png" class="curve">         
-					<p>I'm <strong>Ian SooHoo</strong> and I am a student developer and software designer currently attending San Jose State University and majoring in Computer Science. I have a passion for technology, computers, and, specifically, design. As someone who loves to understand how things work, and someone who uses technology throughout their day, I am interested in an opportunity to work in a career that lets me create devices and services to help enrich others' lives. I love to stay ahead of the curve, and to learn about new concepts such as AI and Big Data. Though I specialize in Software development and design, I try to stay up to date on the latest in other areas. One such area includes web development. </p>
-					<p>I am always excited to learn new things and to help teach other. A fundamental belief of mine is that working in a team helps bring fresh ideas to the table that I alone could not have thought of. Since everyone has different backgrounds and experiences, there will be better solutions to a problem. As a calm and creative leader, I love to collaborate on coding and development. Currently I have experience in Autodesk Inventor CAD, video editing, Java, HTML, CSS, JavaScript; On the server side, DNS, some Sysadmin experience (from Robotics), and Nginx. One hobby of mine, video editing, has become more serious in recent years. Some of my works can be viewed on the Video Production page above. Most of my original work was done in iMovie and Final Cut, but recently I have begun using Premiere Pro and After Effects. </p>
-					<p>My goal is to earn a degree in Computer Science, and to use that degree to find a career in Software Development and Design. I have always had a passion, and will continue to have a fire burn inside of me to adapt and grow as a person, not only in knowledge but also understanding. One of my hobbies is design editing, and another is volunteering. I have created logos my spare time utilizing Photoshop and Illustrator. I volunteer at church as a kids’ leader and on the Production Team as a Technical Manager operating both technical direction and computer graphics.</p>
-				</div>
-			</div>
-		</div>
-		<div class="parallax-window" data-parallax="scroll" data-image-src="img/Pine.jpg">
-			<div class="container">
-				<h1 id="resume"><a href="documents/SooHooIanRésumé.pdf" target="_blank"><u>RÉSUMÉ</u></a></h1>
-				<!--Image by Karen Roussel flickr.com/photos/9300748@N08/ -->
-				<p style="color: white; font-size: 20px;">This is a little paper I wrote about myself; <a href="documents/bragsheet.pdf" target="_blank">Brag Sheet</a></p>
-			</div>
-		</div>
-		<section id="projects" class="bg-light-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="section-heading">Projects</h2>
-						<h3 class="section-subheading text-muted">Some are for school classes, others aren't</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-							<div class="portfolio-hover">
-								<div class="portfolio-hover-content">
-									<i class="fa fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img src="img/portfolio/crossbow.png" class="img-responsive" alt="">
-						</a>
-						<div class="portfolio-caption">
-							<h4>Crossbow</h4>
-							<p class="text-muted">Hardware</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-							<div class="portfolio-hover">
-								<div class="portfolio-hover-content">
-									<i class="fa fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img src="img/portfolio/robotics.png" class="img-responsive" alt="">
-						</a>
-						<div class="portfolio-caption">
-							<h4>Gael Force Robotics Club</h4>
-							<p class="text-muted">Web Design + Server</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-							<div class="portfolio-hover">
-								<div class="portfolio-hover-content">
-									<i class="fa fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img src="img/portfolio/harp.png" class="img-responsive" alt="">
-						</a>
-						<div class="portfolio-caption">
-							<h4>Ardunio Laser Harp</h4>
-							<p class="text-muted">Hardware + Software</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-							<div class="portfolio-hover">
-								<div class="portfolio-hover-content">
-									<i class="fa fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img src="img/portfolio/train.png" class="img-responsive" alt="">
-						</a>
-						<div class="portfolio-caption">
-							<h4>3D Modeled Toy Train</h4>
-							<p class="text-muted">3D CAD</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-							<div class="portfolio-hover">
-								<div class="portfolio-hover-content">
-									<i class="fa fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img src="img/portfolio/mousetrap.png" class="img-responsive" alt="">
-						</a>
-						<div class="portfolio-caption">
-							<h4>Distance Devil</h4>
-							<p class="text-muted">Engineering Design</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-							<div class="portfolio-hover">
-								<div class="portfolio-hover-content">
-									<i class="fa fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img src="img/portfolio/physics.jpg" class="img-responsive" alt="">
-						</a>
-						<div class="portfolio-caption">
-							<h4>AP Physics Indicator</h4>
-							<p class="text-muted">Electrical Engineering</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-							<div class="portfolio-hover">
-								<div class="portfolio-hover-content">
-									<i class="fa fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img src="img/portfolio/circuit.jpg" class="img-responsive" alt="">
-						</a>
-						<div class="portfolio-caption">
-							<h4>Digital Circuit Display</h4>
-							<p class="text-muted">Electrical Engineering</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-							<div class="portfolio-hover">
-								<div class="portfolio-hover-content">
-									<i class="fa fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img src="img/portfolio/game.jpg" class="img-responsive" alt="">
-						</a>
-						<div class="portfolio-caption">
-							<h4>Ball - A Scratch Game</h4>
-							<p class="text-muted">CS</p>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-							<div class="portfolio-hover">
-								<div class="portfolio-hover-content">
-									<i class="fa fa-plus fa-3x"></i>
-								</div>
-							</div>
-							<img src="img/portfolio/python.jpg" class="img-responsive" alt="">
-						</a>
-						<div class="portfolio-caption">
-							<h4>Python Image Render</h4>
-							<p class="text-muted">CS</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section2 id="contact">
-			<div class="spacer spacer-big"></div>
-			<!-- PARALLAX VIDEO SECTION -->             
-			<div id="parallax-video" class="horizontalsection text-light videobg-section"
-				data-videofile="vid/merced" 
-				data-videowidth="1280"
-				data-videoheight="720"
-				data-videoparallax="true"
-				data-videooverlaycolor="#000000"
-				data-videooverlayopacity="0">
-				<div class="horizontalinner wrapper">
-					<div class="section-title sr-animation animated">
-						<div class="container">
-							<h1 class="section-heading">Contact</h1>
-							<p>Email: <a href="mailto:ian@iansoohoo.me">ian@iansoohoo.me</a></p>
-						</div>
-					</div>
-				</div>
-				<!-- END #parallax-video -->
-				<!-- PARALLAX VIDEO SECTION -->
-			</div>
-			<!-- END .section-inner-->
-		</section2>
-		<!-- MODULES -->
-		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2>Crossbow</h2>
-								<img class="img-responsive img-centered" src="img/portfolio/crossbow2.png" alt="">
-								<p class="item-intro text-muted">This project won best design and knocked over the block tower successfully.</p>
-								<p>A crossbow that I and three other team members designed in Autodesk Inventor. Pieces were then laser cut and assembled using MDF or Medium Density Fiberboard. What's interesting about it is that it was required to knock over a small tower, and out of the entire class, ours was one of the very few (and most accurate) ones to do so. Also all pieces are cut out flat, so we had to create a vision to bring 2D into 3D. In addition, it launches glue-stick sized projectiles, but includes a 3D printed one with our initials. </p>
-								<p>
-								<ul class="list-inline">
-									<li>Date: April-May 2015 · <a href="https://docs.google.com/document/d/1fq-GtdspUsuf9c_aiP0SbxwE8lkxr3r1Gs-rPHurXfE/view"> Documentation</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 2 -->
-		<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2">
-							<div class="modal-body">
-								<h2>Dublin High School Gael Force Robotics Club</h2>
-								<img class="img-responsive img-centered" src="img/portfolio/robotics2.png" alt="">
-								<p><a href="http://dhsrobotics.com" target="_blank">Gael Force Robotics</a> is our school's robotics club. I was project lead for web development on the front end, Python back end, team performance database, and blog. I also served as a System Administrator for our server, working with the Linux Terminal and Nginx. I also worked formerly on Node.js. This front end was made in a two month time frame with fellow developers <a href="http://devinmui.github.io" target="_blank">Devin Mui</a> and Billy Zhong.</p>
-								<p>Visit our website <a href="http://dhsrobotics.com" target="_blank">here</a>.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 3 -->
-		<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2>Laser Harp</h2>
-								<img class="img-responsive img-centered" src="img/portfolio/harp.png" alt="">
-								<p class="item-intro text-muted">Lasers + Arduino = music</p>
-								<p>The Laser Harp is a simple Arduino based piece of hardware with the ability to shoot lasers and create music using the laser "strings". It was created using Arduino C, knowledge of circuits, and knowledge of microcontrollers. This project was originally created to be a laser ukulele, and we purchased a ukulele and disassembled it. However, as the project progressed we found that a harp would be a more feasible project to complete within the time constraints. We used a picture frame as the backbone of the harp design and drilled holes to place the lasers and sensors into.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 4 -->
-		<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2>3D Modeled Toy Train</h2>
-								<img class="img-responsive img-centered" src="img/portfolio/train2.png" alt="">
-								<p class="item-intro text-muted">
-									<!-- Train engine, train car, and train tracks</p>
-										<p> -->This engineering assignment was to 3D model a stylish toy train car and engine to fit on a track of specified dimensions. Here, I choose the design, selected the colors, and modeled all the necessary parts in Autodesk Inventor. Next, I assembled the pieces into a toy train and constrained the movement so that only the wheels turn when animated. The next part of the assignment was to join the train car with other students' designs to ensure that all the designs were interchangeable. 
-								</p>
-								<ul class="list-inline">
-									<li>Date: February 2015 · <a href="https://docs.google.com/presentation/d/1hYInGKvDrkQKOHGkTXx3jkzZVgXmWKF_E8i9MOBw3Qc/edit?usp=sharing"> Presentation Slides</a></li>
-								</ul>
-								<p></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 5 -->
-		<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2">
-							<div class="modal-body">
-								<!-- Project Details Go Here -->
-								<h2>Recycled Racer</h2>
-								<img class="img-responsive img-centered" src="img/portfolio/mousetrap2.png" alt="">
-								<p class="item-intro text-muted">A Recycle Racer "Mousetrap Car"</p>
-								<p>r challenge was to create a car powered by either a mouse trap our some other form of power without the need of human interaction to keep the car moving. We designed the mouse-trap powered racecar from common recycled household items. This project took approximately 3 weeks to complete, and we were limited in the materials we were allowed to use. For example, the wheels are made from discs, the body from tongue depressors, and the tension wire from ribbon.</p>
-								<p>One of the early challenges was that our initial design failed the first distance test. However, as a team we pulled together to redesign the power-drive mechanism which in turn delivered enough power to keep the car going, exceeding the required  distance during the second test.</p>
-							</div>
-							<ul class="list-inline">
-								<li>Date: December 2014 · <a href="https://docs.google.com/document/d/1UZTS6NK-r3oKHwgAIkWpzwqwCAZOEtIPFFOtDqxyRj0/edit"> Documentation</a> · <a href="https://drive.google.com/drive/folders/0Bxos4pxdLp0bY0RhdWJCUXdyTlU"> Source Files</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<footer>
-			<section id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-4">
-							<span class="copyright"> &copy; 2018 Ian SooHoo | </span>
-							<a href="/credits">About Site</a>
-						</div>
-						<div class="col-md-4">
-							<ul class="list-inline social-buttons">
-								<li><a href="http://twitter.com/iansoohoo"><i class="fa fa-twitter"></i></a>
-								</li>
-								<li><a href="https://www.behance.net/iansoohoo"><i class="fa fa-behance"></i></a>
-								</li>
-								<li><a href="https://www.linkedin.com/in/iansoohoo"><i class="fa fa-linkedin"></i></a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-4">
-							<ul class="list-inline quicklinks">
-								<li><a href="https://github.com/capturetheworld">View my <strong>Github</strong> profile.</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-		</footer>
-		<!-- Portfolio Modal 6 -->
-		<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2">
-							<div class="modal-body">
-								<h2>AP Physics Indicator</h2>
-								<img class="img-responsive img-centered" src="img/portfolio/physics2.jpg" alt="">
-								<p class="item-intro text-muted">The breadboard with integrated circuits and an output LED.</p>
-								<p>The purpose of my project was to utilize create and breadboard a circuit from scratch using simplified AOI logic with multiple inputs and an output, and to utilize AND and OR gates to produce the desired output. </p>
-								<p>Selecting the most difficult AP class on campus was a challenging choice for me. I decided to use  four input switches, 2 based on grade inputs, and 2 on subjective inputs. Then, I created conditions for when my LED should be on and generated both a truth table and Boolean logic equation from those conditions. After simulating the circuit in Multisim (file can be downloaded below), I breadboarded the circuit on a TI MyDAQ. I then calculated the estimated cost for building a circuit and completed the project within two weeks. I believe that additional inputs should be implemented in the future, to extend the circuit's accuracy: e.g. inputs Science class grades and other math class grades. </p>
-								<ul class="list-inline">
-									<li>Date: December 2016 · <a href="https://docs.google.com/document/d/1woubEPrEFsWhEnhVT4ycV22-nVap1uI-VJZzUTCMUMQ/edit"> Documentation</a> · <a href="https://drive.google.com/open?id=0B4GsOr8LFpqDSVR3bDdZcmFtN1k"> Simulation File</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 7 -->
-		<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2">
-							<div class="modal-body">
-								<h2>Digital Circuit</h2>
-								<img class="img-responsive img-centered" src="img/portfolio/circuit2.jpeg" alt="">
-								<p class="item-intro text-muted">Multisim simulation of circuit display portion.</p>
-								<p>The purpose of my project was to create a digital display utilizing six seven-segment-displays. </p>
-								<p>Working with two other members, I was tasked with designing a circuit display on a group of seven segment displays to simulate a LED display board where we could display any message we want. We were required to have at least foru states, and to be able to switch between these states.  </p>
-								<ul class="list-inline">
-									<li>Date: February 2017 · <a href="https://docs.google.com/document/d/157EuXizw6d1b4PWI9PH61YsnoS2bCEPWSM98PFa978c/edit"> Documentation</a> · <a href="https://drive.google.com/drive/u/0/folders/0B4GsOr8LFpqDTnh6MjdYRFRGNTg"> Project Files</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio 9 -->
-	<div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-			<div class="modal-content">
-				<div class="close-modal" data-dismiss="modal">
-					<div class="lr">
-						<div class="rl">
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2">
-							<div class="modal-body">
-								<h2>Python Project</h2>
-				<img class="img-responsive img-centered" src="img/portfolio/python2.jpg" alt="">
-				<p class="item-intro text-muted">Screenshot of the finished image.</p>
-				<p>The purpose of this project was to use Python to render a final image out of multiple separate images. </p>
-				<p>My team and I decided to create a funny image with arches and skyscrapers in a field. Using Python, we scaled and positioned each image carefully on top of the background image.</p>
-				<ul class="list-inline">
-					<li>Date: April 2015 · <a href="https://docs.google.com/document/d/1gdrD8JBEIr4BJ_7Z6rSpnM9m4pZRcUfsGGvKE4COeHw/edit"> Documentation and Python code</a> · <a href="https://drive.google.com/drive/folders/0B18E-NMhP_ZOUXRGUkdqbWNDR1E?usp=sharing"> Project Files</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Portfolio Modal 8 -->
-		<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-content">
-		<div class="close-modal" data-dismiss="modal">
-			<div class="lr">
-				<div class="rl">
-				</div>
-			</div>
-		</div>
-		<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<div class="modal-body">
-					<h2>Scratch Ball Game</h2>
-					<img class="img-responsive img-centered" src="img/portfolio/game2.jpg" alt="">
-					<p class="item-intro text-muted">Screenshot of the game.</p>
-					<p>The purpose of my project was to utilize Scratch and Scratch 2.0 to create a fully functioning game with at least 2 levels. </p>
-					<p>Working with one other team member, I designed a ball platform game with multiple levels and you could choose from 3 ball types.</p>
-					<ul class="list-inline">
-						<li>Date: September 2014 <a href="https://drive.google.com/drive/folders/0B18E-NMhP_ZOX0lpS2FlSWhSc0k?usp=sharing"> Project Files</a></li>
-					</ul>
-				</div>
-				</div>
-			</div>
-		</div>
-	</div>
-		<!-- Portfolio Modal 9 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-								
-				
-
-		</div>
-		<!-- jQuery -->
-		<script src="js/jquery.js"></script>
-		<!-- Bootstrap Core JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Plugin JavaScript -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-		<script src="js/classie.js"></script>
-		<!--script src="js/cbpAnimatedHeader.js"></script-->
-		<!-- Contact Form JavaScript -->
-		<script src="js/jqBootstrapValidation.js"></script>
-		<script src="js/contact_me.js"></script>
-		<!-- Custom Theme JavaScript -->
-		<script src="js/agency.js"></script>
-		<!--script src="js/smooth.js"></script-->
-		<script>
-			$(document).keyup(function(e){
-				if(e.keyCode == 27) {
-					$('.modal').modal('hide');
+			<script>
+				function myFunction(x) {
+					x.classList.toggle("change");
 				}
-			});
-		</script>
-		<script src="js/main.js"></script>
-		<script type='text/javascript' src='js/jquery.visible.min.js'></script>
-		<script type='text/javascript' src='js/jquery.bgvideo.min.js'></script>
-		<script type='text/javascript' src='js/script.js'></script>
-	</body>
+			</script>
+
+		</div>
+	</nav>
+	<!-- Navigation end -->
+
+	<!-- Top banner -->
+	<section class="fh5co-top-banner">
+		<div class="top-banner__inner site-container">
+			<div class="top-banner__image">
+				<img src="./img/profile.png" alt="author image">
+			</div>
+			<div class="top-banner__text">
+				<div class="top-banner__text-up">
+					<span class="brand-span">Hello! I'm</span>
+					<h2 class="top-banner__h2">Ian</h2>
+				</div>
+				<div class="top-banner__text-down">
+					<h2 class="top-banner__h2">SooHoo</h2>
+					<span class="brand-span">UX Engineer, Designer, Software Developer</span>
+				</div>
+				<p>Website is under construction</p>
+				<a href="./documents/SooHooIanResume.pdf" class="brand-button"> Read my Resume </a>
+			</div>
+		</div>
+	</section>
+	<!-- Top banner end -->
+
+	
+	<!-- Social -->
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="site-container">
+			<div class="footer-inner">
+				<div class="footer-info">
+					<div class="footer-info__left">
+						<img src="./img/mail.png" alt="about me image">
+
+						
+					</div>
+					<div class="footer-info__right">
+						<h5>Get In Touch</h5>
+						<p>Email : hello@iansoohoo.me</p>
+						<div class="social-icons">
+							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="site-container footer-bottom-inner">
+				<p>© Ian SooHoo</p>
+				<div class="footer-bottom__img">
+					<a href="#" class="brand-button"> Behance Design Portfolio </a>
+					<a href="#" class="brand-button"> LinkedIn </a>
+					<a href="#" class="brand-button"> GitHub </a>
+					<a href="#" class="brand-button"> Some other </a>
+					<!-- <img src="./images/footer-mastercard.png" alt="footer image">
+					<img src="./images/footer-paypal.png" alt="footer image">
+					<img src="./images/footer-visa.png" alt="footer image">
+					<img src="./images/footer-fedex.png" alt="footer image">
+					<img src="./images/footer-dhl.png" alt="footer image"> -->
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
 </html>
