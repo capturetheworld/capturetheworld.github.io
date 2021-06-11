@@ -98,6 +98,9 @@ html, body{
     text-align: center;
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     padding: 0em;
+    background: linear-gradient(to bottom right,#FADB82, #f1cc26);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
    
 }
 
@@ -114,6 +117,7 @@ html, body{
 .content4 h1{
     font-size: 20px;
     font-weight: bold;
+    
 }
 
 .content5 {
@@ -136,7 +140,18 @@ html, body{
         grid-template-rows: 0.5fr 0.5fr 2fr 1fr;
         grid-template-areas: "logo" "name" "description" "buttons";
     }
+
+    
     .content2{
         display:none;
+    }
+    .content3 {
+        font-size: 5rem;
+    }
+    .content4 {
+       
+        font-size: 3.5vw;
+       
+        /* margin-right: em; */
     }
 }
