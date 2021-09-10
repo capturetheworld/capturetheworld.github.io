@@ -6,27 +6,30 @@ html, body{
     margin: 0;
     height: 100%;
     overflow: hidden;
-    background-color: #2E3440;
+    background-color: #161616;
 }
 
 .button {
-    border: 2px solid black;
-    background-color: transparent;
-    color: white;
+    border: 0px solid #db0000;
+    background-color: #0e50cc;
+    height: 2em;
+    color: #161831;
     padding: 2px 60px;
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 10px;
   }
 
   .socialmedia {
     border-color: #E5E9F0;
-    color: #E5E9F0;
+    color:white;
+    margin: 0.3em;
   }
   
   .socialmedia:hover {
-    border-color: #7Eb8C8;
-    color: #7Eb8C8;
+    border-color: #0f62fe;
+    background-color: #0f62fe;
+    color: white;
   }
   
 
@@ -63,6 +66,10 @@ html, body{
     margin-right: auto;
     max-width: 5em;
     height: auto;
+    box-shadow: 0px 0px 30px 20px #777777;
+    border-radius: 20%;
+    background-color: #7e7e7ed2;
+
     
     /* min-height: 100%; */
     /* width: 25em;  */
@@ -98,7 +105,8 @@ html, body{
     text-align: center;
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     padding: 0em;
-    background: linear-gradient(to bottom right,#FADB82, #f1cc26);
+    /* background: linear-gradient(to bottom right,#FADB82, #f1cc26); */
+    background: #FFDA5F;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
    
