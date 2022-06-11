@@ -9,17 +9,17 @@ body {
     background-color: #161616;
 }
 
-a {
+a#goto {
     color: white;
     text-decoration-style: dashed;
 }
 
-a:visited {
+a:visited#goto  {
     color: white;
     text-decoration-style: dashed;
 }
 
-a:hover {
+a:hover#goto {
     color: black;
     background-color: #FFDA5F;
     text-decoration-style: dashed;
