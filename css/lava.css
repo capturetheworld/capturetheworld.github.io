@@ -28,20 +28,6 @@ body {
     .blob{
       border-radius: 50%;
       background: #393939;
-      /* Other sample colors:
-      Orange: #e8630a
-      Pink: #EA3281
-      Fuscia: #E71669
-      Purple: #661BAC
-      Yellow: #FDC600
-      Kermit green: #75AC25
-      Light blue: #3283B5
-      Dark blue: #0A5D9A
-      Gunmetal: #232F37
-      BGLight: #1B2735
-      BGDark: #090a0f
-      Want more colors? check out https://coolors.co/ for inspiration.
-      */
       position:absolute;
     }
     
